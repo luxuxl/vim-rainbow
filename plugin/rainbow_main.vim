@@ -6,7 +6,10 @@ command! RainbowToggle call rainbow_main#toggle()
 command! RainbowToggleOn call rainbow_main#load()
 command! RainbowToggleOff call rainbow_main#clear()
 
-if (exists('g:rainbow_active') && g:rainbow_active)
-	auto syntax * call rainbow_main#load()
-	auto colorscheme * call rainbow_main#load()
-endif
+" if (exists('g:rainbow_active') && g:rainbow_active)
+	" auto syntax * call rainbow_main#load()
+	" auto colorscheme * call rainbow_main#load()
+" endif
+
+auto syntax * call rainbow_main#load()
+auto colorscheme * call rainbow_main#load()
